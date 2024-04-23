@@ -1,0 +1,78 @@
+/* Styles for the navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Fixed positioning to keep navbar at top */
+  width: 100%; /* Ensure navbar spans full width of the screen */
+  z-index: 1000;
+  transition: left 0.3s ease; /* Smooth transition for any left movement */
+}
+
+.navbar__logo {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  z-index: 10001;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Space for logo */
+}
+
+.navbar__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar__item {
+  padding: 0 15px;
+}
+
+.navbar__links {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar__btn {
+  display: block;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.social-sidebar {
+  position: fixed;
+  right: -100px; /* Sidebar hidden initially off the right side */
+  top: 0;
+  width: 80px;
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 16px;
+  display: block;
+}
