@@ -1,5 +1,7 @@
 /* Footer Styles */
 .footer {
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     background-color: #333;

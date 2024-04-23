@@ -1,29 +1,35 @@
 /* Styles for the navbar */
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; /* Fixed positioning to keep navbar at top */
-  width: 100%; /* Ensure navbar spans full width of the screen */
-  z-index: 1000;
-  transition: left 0.3s ease; /* Smooth transition for any left movement */
+  position: relative; 
+  width: 100%; 
+  z-index: 10000;
+  transition: left 0.3s ease; 
 }
 
 .navbar__logo {
-  position: absolute;
-  left: 10px;
+  position: fixed;
+  left: 20px; /* Changed from right to left */
   top: 0;
-  z-index: 10001;
+  z-index: 10000;
+}
+
+.navbar__logo img {
+  width: 20%;
+  height: auto;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%; /* Ensure the container spans the full width */
 }
 
 .navbar__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Align items to the right */
   align-items: center;
-  height: 60px; /* Space for logo */
+  height: 60px; 
 }
 
 .navbar__menu {
@@ -53,6 +59,8 @@
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  background: #444; /* Added background color for visibility */
+  color: white; /* Ensuring text is visible */
 }
 
 .social-sidebar {
