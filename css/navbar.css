@@ -1,10 +1,18 @@
 /* Styles for the navbar */
 .navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; 
-  width: 100%; 
-  z-index: 10000;
-  transition: left 0.3s ease; 
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+  height: 60px; 
 }
 
 .navbar__logo {
@@ -31,13 +39,6 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100%; /* Ensure the container spans the full width */
-}
-
-.navbar__container {
-  display: flex;
-  justify-content: flex-end; /* Align items to the right */
-  align-items: center;
-  height: 60px; 
 }
 
 .navbar__menu {
@@ -93,31 +94,106 @@
   display: block;
 }
 
+.navbar__toggle {
+  display: block; /* Show toggle button */
+  cursor: pointer;
+  z-index: 10002; /* Ensure it appears above other elements */
+}
+
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
 
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-  }
   .navbar__container {
-    justify-content: center;
+    justify-content: space-between; /* Align items to the left and right */
   }
 
-  .navbar__logo{
-    width: 50%;
-    position: relative;
+  .navbar__logo {
+    width: 40%;
   }
-  
-  .button {
+
+  .bar{
+    display: block;
+  }
+
+  .navbar__toggle {
+    position: fixed;
+    right: 20px; /* Adjust position to the right */
+    top: 20px;
+    display: block;
+    cursor: pointer;
+    z-index: 10002;
+  }
+
+  .navbar__menu {
     display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    transform: translateY(100%);
+    transition: transform 0.3s ease, display 0.3s ease;
   }
 
-  .navbar h1 {
-    display: none; /* Hide the h1 on smaller screens */
+  .navbar__toggle.active ~ .navbar__menu {
+    display: block;
+    transform: translateY(0);
+  }
+
+  .navbar__menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar__menu li {
+    margin-bottom: 10px;
   }
 
   .navbar__item {
-    padding: 0 8px; /* Further reduce padding for smaller screens */
+    padding: 0;
+  }
+
+  .navbar__links {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background: #444; /* Added background color for visibility */
+    color: white; /* Ensuring text is visible */
+  }
+
+  /* Transform animation when toggled */
+  .navbar__toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .navbar__toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar__toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .navbar__toggle.active ~ .navbar__menu {
+    display: block; /* Show menu when toggle button is active */
   }
 }

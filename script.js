@@ -12,3 +12,23 @@ document.getElementById('contact-page').addEventListener('click', function(event
         navbar.style.left = `-${sidebarWidth}`; // Move navbar to the left
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById('navbar-toggle');
+    toggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const menu = document.querySelector('.navbar__menu');
+        const menuStyle = window.getComputedStyle(menu); // Get the computed style of the menu
+        if (menuStyle.transform === 'matrix(1, 0, 0, 1, 0, 0)') { // Check if transform is 'translateY(0)'
+            menu.style.transform = "translateY(100%)";
+            setTimeout(() => { menu.style.display = "none"; }, 300); // Hide after transition
+        } else {
+            menu.style.display = "block"; // Display before sliding up
+            setTimeout(() => { menu.style.transform = "translateY(0)"; }, 10); // Delay to allow display to apply
+        }
+    });
+});
+
+
+
+  
