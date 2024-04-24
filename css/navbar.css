@@ -6,6 +6,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  background: transparent;
 }
 
 .navbar__container {
@@ -13,6 +14,7 @@
   justify-content: flex-end; /* Align items to the right */
   align-items: center;
   height: 60px; 
+  background: transparent;
 }
 
 .navbar__logo {
@@ -20,12 +22,14 @@
   left: 20px; /* Changed from right to left */
   width: 20%;
   top: 0;
+  background-color: transparent;
   z-index: 10001;
 }
 
 .navbar__logo img {
   width: 100%;
   height: auto;
+  background: transparent;
 }
 
 .navbar h1 {
@@ -39,6 +43,7 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100%; /* Ensure the container spans the full width */
+  background: transparent;
 }
 
 .navbar__menu {
@@ -46,10 +51,12 @@
   margin: 0;
   padding: 0;
   display: flex;
+  background: transparent;
 }
 
 .navbar__item {
   padding: 0 15px;
+  background: transparent;
 }
 
 .navbar__links {
@@ -61,6 +68,7 @@
 
 .navbar__btn {
   display: block;
+  background: transparent;
 }
 
 .button {
@@ -68,7 +76,7 @@
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  background: #444; /* Added background color for visibility */
+  background: transparent; /* Added background color for visibility */
   color: white; /* Ensuring text is visible */
 }
 
