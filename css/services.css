@@ -1,0 +1,72 @@
+.services-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: transparent;
+}
+
+.services-heading h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #6c757d; /* Subtitle color */
+}
+
+.services-heading h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.services-heading p {
+    margin-bottom: 2em;
+    color: #6c757d; /* Description text color */
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.service-item {
+    width: 30%; /* Adjust based on your layout needs */
+    padding: 20px;
+    background-color: transparent; /* White background for service item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto; /* Adjust based on your image's aspect ratio */
+    margin-bottom: 1em;
+}
+
+.service-item h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.service-item p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.service-link {
+    font-weight: bold;
+    color: #007bff; /* Adjust the color to match your theme */
+    text-decoration: none;
+}
+
+.service-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+    .services-grid {
+        flex-direction: column;
+    }
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

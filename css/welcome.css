@@ -1,0 +1,35 @@
+.welcome-section {
+    background-color: transparent; 
+    color: #fff; 
+    text-align: center;
+    padding: 40px 0; 
+}
+
+.welcome-content h2 {
+    font-size: 1.5em; 
+    margin-bottom: 0.5em; 
+    text-transform: uppercase; 
+    color: #E6E6E6; 
+}
+
+.welcome-content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.2em; 
+}
+
+.divider {
+    width: 50px; 
+    height: 3px; 
+    background-color: #D50000; 
+    margin: 0 auto; 
+    margin-bottom: 2em; 
+}
+
+.welcome-content p {
+    font-size: .8em; 
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px; /* adjust as needed */
+    padding: 0 20px; /* adjust for padding on the sides */
+}
