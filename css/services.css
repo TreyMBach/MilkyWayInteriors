@@ -70,3 +70,88 @@
         margin-bottom: 20px;
     }
 }
+
+/* Additonal Services Styling */
+.additional-services-section {
+    padding: 40px 0;
+    background-color: transparent; /* Darker background for contrast */
+    color: #fff; /* Light text for readability */
+}
+
+.additional-services-heading h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.additional-services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.additional-service-item {
+    width: 30%; /* Adjust based on layout needs */
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+
+.additional-service-background {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.additional-service-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.additional-service-item h3,
+.additional-service-item p,
+.additional-service-item a {
+    position: relative;
+    z-index: 2; /* Ensures text appears above overlay */
+    background: transparent;
+}
+
+.additional-service-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.additional-service-item p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.additional-service-link:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 992px) {
+    .additional-service-item {
+        width: 45%; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .additional-service-item {
+        width: 100%; /* Full width on small screens */
+    }
+}
