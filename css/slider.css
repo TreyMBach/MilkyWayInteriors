@@ -1,0 +1,125 @@
+.slider {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 2s ease-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+}
+
+/* Slide Quote */
+.slide-quote {
+    padding-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    max-width: 90%;
+    background-color: transparent;
+}
+
+.slide-quote p {
+    background-color: transparent;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.slide-quote button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.slide-quote button:hover {
+    color: white;
+}
+
+/* Example background images for individual slides */
+#slide-1, #slide-2, #slide-3, #first-clone {
+    background-size: cover;
+    background-position: center;
+}
+
+#slide-1 {
+    background-image: url('../assets/image1.PNG'); 
+}
+
+#slide-2 {
+    background-image: url('../assets/image2.PNG'); 
+}
+
+#slide-3 {
+    background-image: url('../assets/image3.PNG'); 
+}
+
+#first-clone {
+    background-image: url('../assets/image1.PNG'); 
+}
+
+@media (max-width: 940px) {
+    .slide-quote p {
+        font-size: 35px;
+        margin-bottom: 20px; /* Maintain space between the text and button */
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        height: 40vh;
+    }
+    .slide-quote {
+        padding-top: 10px;
+        top: 70%; /* Move the .slide-quote down */
+    }
+    .slide-quote p {
+        font-size: 15px;
+        margin-bottom: 50px; /* Increase space between the text and button */
+    }
+    .slide-quote button {
+        position: absolute;
+        bottom: 15px; /* Position the button towards the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 30vh;
+    }
+    .slide-quote {
+        top: 70%; /* Adjust top position */
+    }
+    .slide-quote p {
+        font-size: 10px;
+        font-weight: bolder;
+        margin-bottom: 50px; /* Adjust spacing for smaller screens */
+    }
+    .slide-quote button {
+        position: absolute;
+        bottom: 0px; /* Position the button even closer to the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
