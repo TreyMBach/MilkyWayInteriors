@@ -1,11 +1,29 @@
 /* Footer Styles */
 .footer {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__social {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    gap: 20px;
+}
+
+.footer__icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer__copy {
+    margin-top: 10px;
+    font-size: 14px;
 }

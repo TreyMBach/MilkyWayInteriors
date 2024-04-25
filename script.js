@@ -72,4 +72,24 @@ window.addEventListener('load', function() {
 });
 
 
+// Modal Popup
+
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+document.querySelectorAll('.gallery-item img').forEach(item => {
+    item.onclick = function() {
+        if (window.innerWidth > 768) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    }
+});
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
   

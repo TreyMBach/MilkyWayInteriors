@@ -1,9 +1,11 @@
 * {
     font-family: "Space Grotesk", sans-serif;
-    background-color: black;
     color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background: url("../assets/background.png") no-repeat center center/cover;
+}
