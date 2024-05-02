@@ -1,3 +1,4 @@
+/* Services Section */
 .services-section {
     text-align: center;
     padding: 40px 0;
@@ -21,22 +22,34 @@
     color: #6c757d; /* Description text color */
 }
 
-.services-grid {
+
+.main-service-items {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust the gap as needed */
+    flex-direction: row;
+    padding: 40px 0;
+    background-color: transparent; /* Transparent background for contrast */
+    color: #fff; /* Light text for readability */
+}
+
+.secondary-service-items {
+    display: grid; /* Switch to grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns, each taking up 1/3 of the row */
+    gap: 20px; /* Space between items */
+    padding: 40px 0;
+    background-color: transparent; /* Transparent background for contrast */
+    color: #fff; /* Light text for readability */
 }
 
 .service-item {
-    width: 30%; /* Adjust based on your layout needs */
+    width: 100%; /* Full-width for mobile */
     padding: 20px;
-    background-color: transparent; /* White background for service item */
+    background-color: transparent; /* Transparent background for service item */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 .service-item img {
     max-width: 100%;
-    height: auto; /* Adjust based on your image's aspect ratio */
+    height: auto; /* Adjust based on image aspect ratio */
     margin-bottom: 1em;
 }
 
@@ -52,7 +65,7 @@
 
 .service-link {
     font-weight: bold;
-    color: #007bff; /* Adjust the color to match your theme */
+    color: #007bff; /* Color matching the theme */
     text-decoration: none;
 }
 
@@ -60,21 +73,11 @@
     text-decoration: underline;
 }
 
-/* Responsive Grid */
-@media (max-width: 992px) {
-    .services-grid {
-        flex-direction: column;
-    }
-    .service-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-/* Additonal Services Styling */
+/* Additional Services Styling */
 .additional-services-section {
+    display: none; /* Hidden by default for mobile */
     padding: 40px 0;
-    background-color: transparent; /* Darker background for contrast */
+    background-color: transparent; /* Transparent background for contrast */
     color: #fff; /* Light text for readability */
 }
 
@@ -86,13 +89,13 @@
 
 .additional-services-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Default to column for mobile */
     justify-content: space-around;
     gap: 20px;
 }
 
 .additional-service-item {
-    width: 30%; /* Adjust based on layout needs */
+    width: 100%; /* Full-width for mobile */
     margin-bottom: 20px;
     position: relative;
     color: white;
@@ -106,17 +109,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative;
     overflow: hidden;
 }
 
 .additional-service-background::before {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0; right: 0; bottom: 0; left: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
@@ -125,8 +124,7 @@
 .additional-service-item p,
 .additional-service-item a {
     position: relative;
-    z-index: 2; /* Ensures text appears above overlay */
-    background: transparent;
+    z-index: 2; /* Text appears above overlay */
 }
 
 .additional-service-item h3 {
@@ -139,19 +137,29 @@
     margin-bottom: 15px;
 }
 
-.additional-service-link:hover {
-    background-color: #0056b3; /* Darker on hover */
-}
 
-/* Responsive design adjustments */
-@media (max-width: 992px) {
-    .additional-service-item {
-        width: 45%; /* Adjust for medium screens */
+/* Desktop Layout */
+@media (min-width: 992px) {
+    .services-grid {
+        flex-direction: row; /* Grid layout on desktop */
+        flex-wrap: wrap;
+    }
+
+    .additional-services-section {
+        display: none; /* Hidden on desktop */
     }
 }
 
-@media (max-width: 768px) {
-    .additional-service-item {
-        width: 100%; /* Full width on small screens */
+@media (max-width: 991px) {
+    .main-service-items {
+        display: block; /* Visible for mobile */
+    }
+    
+    .secondary-service-items {
+        display: none; /* Hidden for mobile */
+    }
+    
+    .additional-services-section {
+        display: block; /* Visible for mobile */
     }
 }

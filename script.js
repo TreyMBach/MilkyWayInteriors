@@ -6,12 +6,28 @@ document.getElementById('contact-page').addEventListener('click', function(event
     const navbar = document.querySelector('.navbar'); // Select the navbar
     const sidebarWidth = '80px'; // Same as your sidebar's width
 
+    this.classList.toggle('active'); // Toggle active state 
     if (sidebar.style.right === '0px') {
         sidebar.style.right = `-${sidebarWidth}`; // Move sidebar off-screen to the right
         navbar.style.left = '0'; // Reset navbar position
     } else {
         sidebar.style.right = '0px'; // Bring sidebar into view
         navbar.style.left = `-${sidebarWidth}`; // Move navbar to the left
+    }
+});
+
+const navbarToggle = document.getElementById('navbar-toggle'); // Hamburger toggle button
+const menu = document.querySelector('.navbar__menu'); // Navbar menu
+const sidebar = document.getElementById('social-sidebar'); // Social sidebar
+
+navbarToggle.addEventListener('click', function() {
+    // Toggle the sidebar display
+    const sidebarWidth = '80px'; // Sidebar width
+
+    if (sidebar.style.right === '0px') {
+        sidebar.style.right = `-${sidebarWidth}`; // Hide the sidebar
+    } else {
+        sidebar.style.right = '0px'; // Show the sidebar
     }
 });
 
@@ -93,3 +109,8 @@ span.onclick = function() {
     modal.style.display = "none";
 }
   
+
+// Store Message
+function showStoreMessage() {
+    alert("Coming Soon!");
+}

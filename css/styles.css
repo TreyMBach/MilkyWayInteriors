@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family: var(--overpass);
+    font-family: var(--default);
     color: white;
     margin: 0;
     padding: 0;

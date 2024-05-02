@@ -127,6 +127,10 @@
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
 
+  #contact-page {
+    display: none;
+  }
+
   .navbar__container {
     justify-content: space-between; /* Align items to the left and right */
   }
