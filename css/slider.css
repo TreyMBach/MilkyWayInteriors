@@ -12,11 +12,13 @@
 
 .slide {
     min-width: 100%;
+    filter: blur(5px);
 }
 
 .slide img {
     width: 100%;
     height: auto;
+    filter: blur(5px);
     /* display: block; */
 }
 

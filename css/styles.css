@@ -1,5 +1,11 @@
+:root {
+    --default : "Space Grotesk", sans-serif;
+    --karla : "Karla", sans-serif;
+    --overpass : "Overpass", sans-serif;
+}
+
 * {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--overpass);
     color: white;
     margin: 0;
     padding: 0;
