@@ -33,3 +33,18 @@
     max-width: 800px; /* adjust as needed */
     padding: 0 20px; /* adjust for padding on the sides */
 }
+
+.welcome-section a {
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    display: inline-block;  /* Makes margin effective by treating the element as a block within its line */
+    margin-top: 20px;  /* Adds space above the link */
+}
+
+.welcome-content a:hover {
+    opacity: 70%;
+}
