@@ -1,7 +1,7 @@
 /* Styles for the navbar */
 .navbar {
   padding: 10px 20px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,7 +18,7 @@
 }
 
 .navbar__logo {
-  position: fixed;
+  position: absolute;
   left: 20px; /* Changed from right to left */
   width: 20%;
   top: 0;
