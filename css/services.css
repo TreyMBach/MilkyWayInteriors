@@ -48,7 +48,7 @@
 }
 
 .service-item img {
-    max-width: 100%;
+    width: 100%;
     height: auto; /* Adjust based on image aspect ratio */
     margin-bottom: 1em;
 }
@@ -147,6 +147,12 @@
 
     .additional-services-section {
         display: none; /* Hidden on desktop */
+    }
+
+    .service-item img {
+        width: 100%; /* Ensure images take up full width */
+        height: 200px; /* Set a fixed height */
+        object-fit: cover; /* Ensure images cover the container */
     }
 }
 
