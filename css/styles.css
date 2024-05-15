@@ -1,5 +1,6 @@
 :root {
-    --default : "Space Grotesk", sans-serif;
+    --default: "sofia-pro", sans-serif;
+    --grotesk : "Space Grotesk", sans-serif;
     --karla : "Karla", sans-serif;
     --overpass : "Overpass", sans-serif;
 }
@@ -15,4 +16,12 @@
 body,html {
     background: black;
     background: url("../assets/background.png") no-repeat center center/cover;
+}
+
+p {
+    font-family: var(--default);
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
