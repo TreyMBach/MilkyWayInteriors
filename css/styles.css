@@ -25,3 +25,29 @@ p {
     margin: 0;
     padding: 0;
 }
+
+
+/* Star Background */
+.star-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white, 0 0 20px white;
+    animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}

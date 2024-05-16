@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/yky3qnr.css">
 </head>
 <body>
+    <div class="star-background"></div>
     <!-- Navbar -->
     <nav class="navbar">
         <!-- <a href="index.html" class="navbar__logo"><img src="./assets/image+white.jpg.png" alt="Logo"></a> -->
@@ -88,7 +89,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <!-- <section class="services-section">
         <div class="services-heading">
             <h2>Our Most Popular</h2>
             <h1>Services</h1>
@@ -118,8 +119,48 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-heading">
+            <h2>Our Most Popular</h2>
+            <h1>Services</h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="service-item">
+                        <img src="./assets/image1.PNG" alt="Headliner Restoring">
+                        <h3>Headliner Restoring</h3>
+                        <p>Transform your car's interior by upgrading the largest piece with a luxurious suede headliner with material sourced from local businesses. Choose from diverse colors and materials for a fresh, upscale driving experience for everyone.</p>
+                        <p><strong>Starting at $199.99</strong></p>
+                        <a href="./pages/services.html" class="service-link">Headliner Restoring →</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-item">
+                        <img src="./assets/image2.PNG" alt="Seatbelt Re-webbing">
+                        <h3>Seatbelt Re-webbing</h3>
+                        <p>Revive your ride with our expert seatbelt re-webbing and color customization. Enhance safety and style effortlessly. Upgrade your seatbelts today for a safer and sleeker ride!</p>
+                        <p><strong>Starting at $149.99</strong></p>
+                        <a href="./pages/services.html" class="service-link">Seatbelt Re-webbing →</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-item">
+                        <img src="./assets/image3.PNG" alt="Starlight Headliner Kits">
+                        <h3>Starlight Headliner Kits</h3>
+                        <p>Experience a seamless DIY installation with our kits designed just for your vehicle. Transform your vehicle's interior into a mesmerizing night sky with cutting-edge projectors, premium materials, and expert guidance. Enjoy day-and-night beauty with our reliable support and warranty.</p>
+                        <p><strong>Starting at $499.99</strong></p>
+                        <a href="./pages/services.html" class="service-link">Starlight Headliner Kits →</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
     </section>
-    
+    </section>
     
 
     <!-- Footer -->
@@ -147,7 +188,8 @@
 
 
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/stars.js"></script>
 
 </body>
 </html>
