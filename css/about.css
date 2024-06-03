@@ -19,9 +19,16 @@
 
 /* Testimonials Section Styles */
 .testimonials-section {
-    background-color: transparent;
+    background-color: transparent; /* Transparent background */
     padding: 50px 20px;
     text-align: center;
+    color: #fff;
+    margin-top: 200px; /* Add margin to top */
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .testimonials-container {
@@ -29,21 +36,73 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    justify-items: center; /* Center items horizontally */
 }
 
 .testimonial-item {
-    background-color: transparent;
+    background-color: #2a2a2a;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 90%; /* Ensure testimonials do not stretch too wide */
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
 }
 
 .testimonial-item p {
     font-style: italic;
-    color: white;
+    color: #ddd;
 }
 
 .testimonial-item h3 {
     margin-top: 10px;
-    color: white;
+    color: #fff;
+}
+
+/* Add animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-section h2 {
+        font-size: 2em;
+    }
+
+    .testimonial-item {
+        padding: 15px;
+    }
+
+    .testimonial-item p {
+        font-size: 0.9em;
+    }
+
+    .testimonial-item h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+        gap: 40px;
+        justify-items: stretch; /* Stretch items to fill the grid */
+    }
+
+    .testimonial-item {
+        max-width: 100%; /* Allow items to fill the grid columns */
+    }
 }

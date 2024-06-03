@@ -12,13 +12,13 @@
 
 .slide {
     min-width: 100%;
-    filter: blur(2px);
+    /* filter: blur(2px); */
 }
 
 .slide img {
     width: 100%;
     height: auto;
-    filter: blur(2px);
+    /* filter: blur(2px); */
     /* display: block; */
 }
 
@@ -56,6 +56,15 @@
     color: white;
 }
 
+/* Subtext */
+.slide-quote .sub-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+}
+
+
 /* Example background images for individual slides */
 #slide-1, #slide-2, #slide-3, #first-clone {
     background-size: cover;
@@ -81,7 +90,7 @@
 /* Carousel */
 .carousel-container {
     position: relative;
-    max-width: 70%;
+    max-width: 100%;
     overflow: hidden;
     margin: auto;
 }
@@ -121,6 +130,9 @@
         font-size: 35px;
         margin-bottom: 20px; /* Maintain space between the text and button */
     }
+    .slide-quote .sub-text {
+        font-size: 16px;
+    }
     .carousel-container {
         max-width: 100%;
     }
@@ -138,11 +150,14 @@
         font-size: 15px;
         margin-bottom: 50px; /* Increase space between the text and button */
     }
-    .slide-quote button {
+    /* .slide-quote button {
         position: absolute;
-        bottom: 15px; /* Position the button towards the bottom */
+        bottom: 15px; 
         left: 50%;
         transform: translateX(-50%);
+    } */
+    .slide-quote .sub-text {
+        font-size: 14px;
     }
 }
 
@@ -159,11 +174,10 @@
         margin-bottom: 50px; /* Adjust spacing for smaller screens */
     }
     .slide-quote button {
-        position: absolute;
-        bottom: 0px; /* Position the button even closer to the bottom */
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 8px;
+        padding: 2px;
         font-size: 10px;
+    }
+    .slide-quote .sub-text {
+        font-size: 8px;
     }
 }

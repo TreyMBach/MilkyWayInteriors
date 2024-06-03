@@ -1,3 +1,19 @@
+/* Warranty Message */
+.warranty-message {
+    margin-top: 200px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    font-size: 1.5em;
+}
+
+.warranty-message h1 {
+    margin: 0;
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
 /* Services Section */
 .services-section {
     text-align: center;
@@ -75,7 +91,7 @@
 
 /* Additional Services Styling */
 .additional-services-section {
-    display: none; /* Hidden by default for mobile */
+
     padding: 40px 0;
     background-color: transparent; /* Transparent background for contrast */
     color: #fff; /* Light text for readability */
@@ -145,8 +161,8 @@
         flex-wrap: wrap;
     }
 
-    .additional-services-section {
-        display: none; /* Hidden on desktop */
+    .secondary-service-items {
+        display: none; /* Hidden for desktop */
     }
 
     .service-item img {
