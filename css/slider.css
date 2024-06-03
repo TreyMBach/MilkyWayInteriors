@@ -78,10 +78,51 @@
     background-image: url('../assets/image1.PNG'); 
 }
 
+/* Carousel */
+.carousel-container {
+    position: relative;
+    max-width: 70%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
 @media (max-width: 940px) {
     .slide-quote p {
         font-size: 35px;
         margin-bottom: 20px; /* Maintain space between the text and button */
+    }
+    .carousel-container {
+        max-width: 100%;
     }
 }
 

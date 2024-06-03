@@ -1,6 +1,6 @@
 /* Styles for the navbar */
 .navbar {
-  padding: 10px 20px;
+  padding: 50px 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   position: absolute;
   left: 20px; /* Changed from right to left */
   width: 20%;
-  top: 0;
+  /* top: 0; Potential FIX TO MAKE ELEMENTS VERTICAL */
   background-color: transparent;
   z-index: 10001;
 }
@@ -137,6 +137,7 @@
 
   .navbar__logo {
     width: 40%;
+    top: 0;
   }
 
   .bar{

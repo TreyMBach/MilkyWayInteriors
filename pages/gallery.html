@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilky Way Interiors</title>
+    <title>Milky Way Interiors</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/services.css">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)" href="../assets/faviconlight.png">
+    <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: dark)" href="../assets/favicondark.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,300&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/yky3qnr.css">
@@ -18,7 +20,6 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <a href="index.html" class="navbar__logo"><img src="../assets/image+white.jpg.png" alt="Logo"></a>
         <div class="navbar__toggle" id="navbar-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -26,6 +27,7 @@
         </div>
         <div class="container">
             <div class="navbar__container">
+                <a href="../index.html" class="navbar__logo"><img src="../assets/image+white.jpg.png" alt="Logo"></a>
                 <ul class="navbar__menu">
                     <li class="navbar__item"><a href="../pages/services.html" class="navbar__links" id="services-page">Services</a></li>
                     <li class="navbar__item"><a href="../pages/gallery.html" class="navbar__links" id="gallery-page">Gallery</a></li>
@@ -44,57 +46,20 @@
     </nav>
 
     <!-- Gallery Section -->
-    <section class="gallery-section">
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="../assets/image1.PNG" alt="">
-                <div class="testimonial-overlay">
-                    <p>"The attention to detail is unparalleled, and the craftsmanship is truly world-class!" - Alex G.</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="../assets/image1.PNG" alt="">
-                <div class="testimonial-overlay">
-                    <p>You know, I was hesitant at first trusting my only car in another companies hands, but I’m so glad that I did, Milky Way interiors blew me away with how much I liked the product! I love my starlight headliner! Thank you guys so much! - Tanner Thomas</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="../assets/image3.PNG" alt="">
-                <div class="testimonial-overlay">
-                    <p>"Absolutely stunning work. They transformed my car's interior completely!" - Samantha R.</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="../assets/image1.PNG" alt="">
-                <div class="testimonial-overlay">
-                    <p>"Absolutely stunning work. They transformed my car's interior completely!" - Samantha R.</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="../assets/image2.PNG" alt="">
-                <div class="testimonial-overlay">
-                    <p>"Absolutely stunning work. They transformed my car's interior completely!" - Samantha R.</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="../assets/image3.PNG" alt="">
-                <div class="testimonial-overlay">
-                    <p>"Absolutely stunning work. They transformed my car's interior completely!" - Samantha R.</p>
-                </div>
-            </div>
-        </div>
+    <section class="gallery">
+        <img src="../assets/image1.png" alt="Image 1">
+        <img src="../assets/image2.png" alt="Image 2">
+        <img src="../assets/image3.png" alt="Image 3">
+        <img src="../assets/image1.png" alt="Image 1">
+        <img src="../assets/image2.png" alt="Image 2">
+        <img src="../assets/image3.png" alt="Image 3">
+        <img src="../assets/image1.png" alt="Image 1">
+        <img src="../assets/image2.png" alt="Image 2">
+        <img src="../assets/image3.png" alt="Image 3">
+        <img src="../assets/image1.png" alt="Image 1">
+        <img src="../assets/image2.png" alt="Image 2">
+        <img src="../assets/image3.png" alt="Image 3">
     </section>
-
-    <!-- Modal for viewing enlarged images -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-        
-    
-
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -118,7 +83,6 @@
         </div>
     </footer>
 
-    <script src="../script.js"></script>
-
+    <script src="../js/script.js"></script>
 </body>
 </html>
