@@ -201,9 +201,15 @@
     .slide-quote .sub-text {
         font-size: 14px;
     }
+    .text-overlay p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
+    .text-overlay p {   
+        font-size: 12px;
+    }
     .slider {
         height: 30vh;
     }

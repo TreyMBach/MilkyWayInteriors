@@ -58,3 +58,9 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.instagram-media {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
