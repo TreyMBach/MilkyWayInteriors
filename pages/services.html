@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/slider.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +59,54 @@
                 <h2>Our Most Popular</h2>
                 <h1>Services</h1>
             </div>
+            
+        <section class="services-section">
+            <div class="services-heading">
+                <h2>Our Most Popular</h2>
+                <h1>Services</h1>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="service-item">
+                            <img src="../assets/image1.PNG" alt="Headliner Restoring" style="width: 100%; height: 65vh;">
+                            <div class="text-overlay">
+                                <h3>Starlight Headliner</h3>
+                                <p>Transform your car's interior by upgrading the largest piece with a luxurious suede headliner with material sourced from local businesses. Choose from diverse colors and materials for a fresh, upscale driving experience for everyone.</p>
+                                <p><strong>Starting at $199.99</strong></p>
+                                <a href="./pages/services.html" class="service-link">More Services →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-item">
+                            <img src="../assets/image2.PNG" alt="Seatbelt Re-webbing" style="width: 100%; height: 65vh;">
+                            <div class="text-overlay">
+                                <h3>Headliner Restores</h3>
+                                <p>Revive your ride with our expert seatbelt re-webbing and color customization. Enhance safety and style effortlessly. Upgrade your seatbelts today for a safer and sleeker ride!</p>
+                                <p><strong>Starting at $149.99</strong></p>
+                                <a href="./pages/services.html" class="service-link">More Services →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-item">
+                            <img src="../assets/image3.PNG" alt="Headerliner Kits" style="width: 100%; height: 65vh;">
+                            <div class="text-overlay">
+                                <h3>More Auto-Reupholstery</h3>
+                                <p>Experience a seamless DIY installation with our kits designed just for your vehicle. Transform your vehicle's interior into a mesmerizing night sky with cutting-edge projectors, premium materials, and expert guidance. Enjoy day-and-night beauty with our reliable support and warranty.</p>
+                                <p><strong>Starting at $499.99</strong></p>
+                                <a href="./pages/services.html" class="service-link">More Services →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
             <div class="services-grid">
-                <div class="main-service-items">
+                <!-- <div class="main-service-items">
                     <div class="service-item">
                         <img src="../assets/image1.PNG" alt="Headliner Restoring">
                         <div class="service-content">
@@ -88,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                
+                 -->
                 <div class="secondary-service-items">
                     <div class="service-item">
                         <img src="../assets/image2.PNG" alt="Headerliner Kits">
@@ -219,8 +266,9 @@
         </div>
     </footer>
 
+
+    <script src="../js/slider.js""></script>
     <script src="../js/script.js"></script>
-    <script src="../js/stars.js""></script>
 
 </body>
 </html>
