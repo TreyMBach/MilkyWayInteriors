@@ -12,7 +12,7 @@
 
 .slide {
     min-width: 100%;
-    /* filter: blur(2px); */
+    background-repeat: no-repeat;
 }
 
 .slide img {
@@ -182,7 +182,7 @@
 
 @media (max-width: 768px) {
     .slider {
-        height: 60vh;
+        height: 70vh;
     }
     .slide-quote {
         padding-top: 10px;
@@ -211,7 +211,7 @@
         font-size: 12px;
     }
     .slider {
-        height: 50vh;
+        height: 60vh;
     }
     .slide-quote {
         top: 70%; /* Adjust top position */

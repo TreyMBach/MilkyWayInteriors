@@ -18,7 +18,7 @@ function moveCarousel(direction) {
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
-setInterval(() => moveCarousel(1), 10000);
+setInterval(() => moveCarousel(1), 8000);
 
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
